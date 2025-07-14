@@ -1,9 +1,11 @@
 <template>
-  <RouterView />
+<div>Hello World</div>
 </template>
 
-<script setup>
+<script setup lang="js">
+
 </script>
 
 <style scoped>
+
 </style>
