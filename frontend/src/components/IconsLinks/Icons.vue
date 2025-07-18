@@ -1,13 +1,18 @@
 <template>
   <div class="icons">
-    <a data-aos="fade-in" data-aos-duration="1400" data-aos-delay="600" href="#"><i class="ri-facebook-fill"></i></a>
-    <a data-aos="fade-in" data-aos-duration="1400" data-aos-delay="700" href="#"><i class="ri-youtube-fill"></i></a>
-    <a data-aos="fade-in" data-aos-duration="1400" data-aos-delay="800" href="#"><i class="ri-twitter-fill"></i></a>
+    <a data-aos="fade-in" data-aos-duration="1400" data-aos-delay="600" href="#"
+      ><i class="ri-facebook-fill"></i
+    ></a>
+    <a data-aos="fade-in" data-aos-duration="1400" data-aos-delay="700" href="#"
+      ><i class="ri-youtube-fill"></i
+    ></a>
+    <a data-aos="fade-in" data-aos-duration="1400" data-aos-delay="800" href="#"
+      ><i class="ri-twitter-fill"></i
+    ></a>
   </div>
 </template>
 
-<script setup lang="ts">
-</script>
+<script setup lang="ts"></script>
 
 <style scoped lang="scss">
 .icons {

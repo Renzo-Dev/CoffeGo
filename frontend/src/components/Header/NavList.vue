@@ -11,17 +11,16 @@ defineProps({
   isActive: {
     type: Boolean,
     default: false,
-  }
+  },
 })
 
 const listItems = [
   { text: 'About', link: '#' },
   { text: 'Membership', link: '#' },
   { text: 'Events', link: '#' },
-  { text: 'Contact', link: '#' }
+  { text: 'Contact', link: '#' },
 ]
 </script>
-
 
 <style lang="scss">
 .nav_list {
