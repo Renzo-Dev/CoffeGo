@@ -6,6 +6,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>CoffeeGo</title>
 
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+
 	<!--	Google Font-->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,5 +29,11 @@
 <body>
 <div id="app"></div>
 <script type="module" src="/src/main.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+	AOS.init({
+		offset: 1
+	})
+</script>
 </body>
 </html>

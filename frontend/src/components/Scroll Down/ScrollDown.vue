@@ -1,5 +1,5 @@
 <template>
-  <div class="scroll">
+  <div class="scroll" data-aos="zoom-out-down" data-aos-duration="1400" data-aos-delay="550">
     <a href="#">
       <i class="ri-scroll-to-bottom-line"></i>
       Scroll Down
@@ -7,7 +7,8 @@
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+</script>
 
 <style scoped lang="scss">
 .scroll {

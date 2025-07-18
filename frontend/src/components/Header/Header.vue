@@ -1,29 +1,33 @@
 <template>
   <header class="header">
     <Logo />
-    <NavList />
+    <NavList :isActive="showNavList" />
     <div class="right-content">
       <a href="#" class="nav-btn">Sign In</a>
-      <div onclick="menuActive" class="bx bx-menu" id="menu-icon"></div>
+      <div
+        @click.prevent="toggleMenu"
+        :class="['bx', showNavList ? 'bx-x' : 'bx-menu']"
+        id="menu-icon"
+      ></div>
     </div>
   </header>
 </template>
 
-<script setup lang="ts">
+<script setup>
+import { ref } from 'vue'
 import Logo from '@/components/Header/Logo.vue'
 import NavList from '@/components/Header/NavList.vue'
-import { defineComponent } from 'vue'
 
-export default defineComponent({
-  setup() {
-    function menuActive() {}
+const showNavList = ref(false)
 
-    return {
-      menuActive,
-    }
-  },
-})
+const toggleMenu = () => {
+  showNavList.value = !showNavList.value
+}
 </script>
+
+<style scoped lang="scss">
+@use '@/assets/styles/components/Header.scss';
+</style>
 
 <style scoped lang="scss">
 @use '@/assets/styles/components/Header.scss';

@@ -1,24 +1,25 @@
 <template>
   <section class="hero">
     <div class="hero-text">
-      <h5>#Coffee for hot days</h5>
-      <h1>- Cold Brew</h1>
-      <p>
+      <h5 data-aos="fade-right" data-aos-duration="1400">#Coffee for hot days</h5>
+      <h1 data-aos="zoom-in-left" data-aos-duration="1400" data-aos-delay="200">- Cold Brew</h1>
+      <p data-aos="fade-right" data-aos-duration="1400" data-aos-delay="300">
         Boots your productivity and build your mood with a glass of coffee in the morning. Coffee
         has a stimulating effect.
       </p>
-      <div class="main-hero">
+      <div data-aos="flip-down" data-aos-duration="1400" data-aos-delay="400" class="main-hero">
         <a href="#" class="btn">Order Now</a>
         <a href="#" class="price">$16.00 | <span>Regular Price</span></a>
       </div>
     </div>
-    <div class="hero-img">
+    <div data-aos="zoom-in" data-aos-duration="1400" class="hero-img">
       <img src="@/assets/images/hero.png" />
     </div>
   </section>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+</script>
 
 <style scoped lang="scss">
 .hero {

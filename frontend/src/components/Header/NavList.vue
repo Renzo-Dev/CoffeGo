@@ -1,42 +1,27 @@
 <template>
-  <ul class="nav_list">
-    <li v-for="item in listItems" class="nav_list_item">
+  <ul class="nav_list" :class="{ open: isActive }">
+    <li v-for="item in listItems" :key="item.text" class="nav_list_item">
       <a :href="item.link">{{ item.text }}</a>
     </li>
   </ul>
 </template>
 
-<script lang="js">
-import { defineComponent } from 'vue'
-
-export default defineComponent({
-  name: 'NavList',
-  setup() {
-    let listItems = [
-      {
-        text: 'About',
-        link: '#',
-      },
-      {
-        text: 'Membership',
-        link: '#',
-      },
-      {
-        text: 'Events',
-        link: '#',
-      },
-      {
-        text: 'Contact',
-        link: '#',
-      },
-    ]
-
-    return {
-      listItems,
-    }
-  },
+<script setup>
+defineProps({
+  isActive: {
+    type: Boolean,
+    default: false,
+  }
 })
+
+const listItems = [
+  { text: 'About', link: '#' },
+  { text: 'Membership', link: '#' },
+  { text: 'Events', link: '#' },
+  { text: 'Contact', link: '#' }
+]
 </script>
+
 
 <style lang="scss">
 .nav_list {
